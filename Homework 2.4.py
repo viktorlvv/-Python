@@ -12,13 +12,10 @@ for i in range(len(numbers)):
         if num % j == 0:
                 is_prime = True
                 if j != a:
-                     continue
+                    continue
     if is_prime:
         not_primes.append(num)
-
     else:
         primes.append(num)
-
-
 print("Простые числа: ", primes)
 print("Составные числа: ", not_primes)
