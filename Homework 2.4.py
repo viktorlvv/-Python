@@ -7,12 +7,10 @@ for i in range(len(numbers)):
     num = numbers[i]
     if num == 1:
         continue
-    a = num - 1
     for j in range(2, num):
         if num % j == 0:
-                is_prime = True
-        if j != a:
-                break
+            is_prime = True
+            break
     if is_prime:
         not_primes.append(num)
     else:
