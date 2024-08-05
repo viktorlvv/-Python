@@ -5,14 +5,14 @@ num = numbers[0]
 for i in range(len(numbers)):
     is_prime = False
     num = numbers[i]
+    if num == 1:
+        continue
     a = num - 1
     for j in range(2, num):
-        if num == 1:
-            break
         if num % j == 0:
                 is_prime = True
-                if j != a:
-                    continue
+        if j != a:
+                break
     if is_prime:
         not_primes.append(num)
     else:
